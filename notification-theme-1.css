@@ -1,4 +1,4 @@
-.trigger-notification {
+#trigger-notification {
     background-color: #555;
     color: white;
     text-decoration: none;
@@ -7,7 +7,7 @@
     display: inline-block;
     border-radius: 2px;
 }
-.notify-count {
+#notify-count {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -15,4 +15,40 @@
     border-radius: 50%;
     background: red;
     color: white;
+}
+#notification-box {
+    background-color: #364656;
+    width: 250px;
+    height: 300px;
+    margin:3px 0 0 0;
+    padding: 10px;
+    border-radius:3px;
+    border:1px black solid;
+    border-radius:3px;
+    pointer-events: auto;
+    position: absolute;
+    z-index: 1;
+    transition: visibility 1s;
+    background: #ededed;
+    overflow-y: auto;
+
+}
+#notification-box div{
+    background:transparent;
+    outline:0;
+    color:black;
+    text-decoration:none;
+    padding:5px;
+    float:left;
+    width:200px;
+    max-width:200px;
+    word-wrap:break-word;
+}
+.show-notifis {
+    opacity: 100;
+    visibility: visible;
+}
+.hide-notifs {
+    opacity: 0;
+    visibility: hidden;
 }
